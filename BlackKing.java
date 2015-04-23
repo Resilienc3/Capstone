@@ -14,14 +14,13 @@ import info.gridworld.grid.Location;
 public class BlackKing extends King
 {
     /** description of instance variable x (add comment for each instance variable) */
-    private int x = 1;
+    private int type = 1;
 
     /**
      * Default constructor for objects of class BlackKing
      */
     public BlackKing()
     {
-        
         super();
     }
 

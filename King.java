@@ -14,16 +14,19 @@ import info.gridworld.grid.Location;
 public class King extends ChessPiece
 {
     /** description of instance variable x (add comment for each instance variable) */
-    private int x = 0;
+    
 
     /**
      * Default constructor for objects of class King
      */
-    public King()
+    public King(int type)
     {
-        // initialise instance variables
-        x = 0;
+        super(type);
     }
+    
+
+    
+
 
     /**
      * An example of a method - replace this comment with your own
@@ -38,7 +41,24 @@ public class King extends ChessPiece
      */
     public void moveTo(Location newLocation)
     {
-        //test for distance, Black pieces, and white pieces.
+        if(newLocation.getRow() == this.getLocation().getRow()-1 && 
+            this.getGrid().isValid(newLocation) == true||
+            newLocation.getRow() == this.getLocation().getRow()+1 && 
+            this.getGrid().isValid(newLocation) == true||
+            newLocation.getCol() == this.getLocation().getCol()-1 &&
+            this.getGrid().isValid(newLocation) == true||
+            newLocation.getCol() == this.getLocation().getCol()+1 &&
+            this.getGrid().isValid(newLocation) == true)
+            {
+             if(this.getGrid().get(newLocation) == null)
+                super.moveTo(newLocation);
+             else if(this.getGrid().get(newLocation).getType() != this.getType())
+                super.moveTo(newLocation);
+                
+            }
+            
+            
+        
     }
-
+    
 }

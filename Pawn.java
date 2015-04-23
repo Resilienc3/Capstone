@@ -14,15 +14,13 @@ import info.gridworld.grid.Location;
 public class Pawn extends ChessPiece
 {
     /** description of instance variable x (add comment for each instance variable) */
-    private int x = 0;
+    private int type = 0;
 
     /**
      * Default constructor for objects of class Pawn
      */
     public Pawn()
     {
-        // initialise instance variables
-        x = 0;
     }
 
     /**
@@ -36,10 +34,9 @@ public class Pawn extends ChessPiece
      * @param    y    description of parameter y
      * @return    description of the return value
      */
-    public int sampleMethod(int y)
+    public void moveTo(Location newLocation)
     {
-        // put your code here
-        return x+y;
+        
     }
 
 }

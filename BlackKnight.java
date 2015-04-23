@@ -14,7 +14,7 @@ import info.gridworld.grid.Location;
 public class BlackKnight extends Knight
 {
     /** description of instance variable x (add comment for each instance variable) */
-    private int x = 1;
+    private int type = 1;
 
     /**
      * Default constructor for objects of class BlackKnight
