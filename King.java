@@ -52,7 +52,7 @@ public class King extends ChessPiece
             {
              if(this.getGrid().get(newLocation) == null)
                 super.moveTo(newLocation);
-             else if(this.getGrid().get(newLocation).getType() != this.getType())
+             else if(((ChessPiece)(this.getGrid().get(newLocation))).getType() != this.getType())
                 super.moveTo(newLocation);
                 
             }

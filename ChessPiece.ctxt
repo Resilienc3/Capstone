@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=
-comment0.target=ChessPiece()
+comment0.params=type
+comment0.target=ChessPiece(int)
 comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ ChessPiece\r\n
 comment1.params=
 comment1.target=int\ getType()
