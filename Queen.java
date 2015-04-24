@@ -19,8 +19,10 @@ public class Queen extends ChessPiece
     /**
      * Default constructor for objects of class Queen
      */
-    public Queen()
+    public Queen(int type)
     {
+        super(type);
+        setType(0);
     }
 
     /**
