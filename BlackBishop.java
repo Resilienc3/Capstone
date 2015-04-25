@@ -6,23 +6,23 @@ import java.util.ArrayList;
 import info.gridworld.grid.Location;
 
 /**
- * Write a description of class BlackBishop here.
+ * A representation of a Black Bishop in a game of Chess.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jalen Smith 
+ * @version 4/23/15
  */
 public class BlackBishop extends Bishop
 {
     /** description of instance variable x (add comment for each instance variable) */
-    private int type = 1;
+    
 
     /**
      * Default constructor for objects of class BlackBishop
      */
-    public BlackBishop()
+    public BlackBishop(int type)
     {
         // initialise instance variables
-       super();
+       super(type);
     }
 
 

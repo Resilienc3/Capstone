@@ -6,15 +6,14 @@ import java.util.ArrayList;
 import info.gridworld.grid.Location;
 
 /**
- * Write a description of class Queen here.
+ * A representation of a Queen in a game of Chess.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jalen Smith 
+ * @version 4/23/15
  */
 public class Queen extends ChessPiece
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    private int type = 0;
+    
 
     /**
      * Default constructor for objects of class Queen
@@ -22,23 +21,19 @@ public class Queen extends ChessPiece
     public Queen(int type)
     {
         super(type);
-        setType(0);
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+     * Overides moveTo method of Actors to fit the game of Chess
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * @pre        Assumes piece is in the grid
+     * @post    If a piece is in the location that it is moved to, that piece will be removed from grid
+     * @param    newLocation - The Location you wish to move the piece to.
      */
     public void moveTo(Location newLocation)
     {
-        
+        super.moveTo(newLocation);
     }
+    
 
 }

@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.params=
-comment0.target=BlackKnight()
+comment0.params=type
+comment0.target=BlackKnight(int)
 comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ BlackKnight\r\n
 numComments=1

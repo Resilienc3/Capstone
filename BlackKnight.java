@@ -6,23 +6,23 @@ import java.util.ArrayList;
 import info.gridworld.grid.Location;
 
 /**
- * Write a description of class BlackKnight here.
+ * A representation of a Black Knight in a game of Chess.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jalen Smith 
+ * @version 4/23/15
  */
 public class BlackKnight extends Knight
 {
     /** description of instance variable x (add comment for each instance variable) */
-    private int type = 1;
+   
 
     /**
      * Default constructor for objects of class BlackKnight
      */
-    public BlackKnight()
+    public BlackKnight(int type)
     {
         // initialise instance variables
-        super();
+        super(type);
     }
 
    

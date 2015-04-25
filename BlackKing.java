@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import info.gridworld.grid.Location;
 
 /**
- * Write a description of class BlackKing here.
+ * A representation of a Black King in a game of Chess.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jalen Smith 
+ * @version 4/23/15
  */
 public class BlackKing extends King
 {
@@ -19,9 +19,9 @@ public class BlackKing extends King
     /**
      * Default constructor for objects of class BlackKing
      */
-    public BlackKing()
+    public BlackKing(int type)
     {
-        super();
+        super(type);
     }
 
     
