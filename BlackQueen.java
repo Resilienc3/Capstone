@@ -6,23 +6,23 @@ import java.util.ArrayList;
 import info.gridworld.grid.Location;
 
 /**
- * Write a description of class BlackQueen here.
+ * A representation of a Black Queen in a game of Chess.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jalen Smith 
+ * @version 4/23/15
  */
 public class BlackQueen extends Queen
 {
     /** description of instance variable x (add comment for each instance variable) */
-    private int type = 1;
+    
 
     /**
      * Default constructor for objects of class BlackQueen
      */
-    public BlackQueen()
+    public BlackQueen(int type)
     {
         // initialise instance variables
-        super();
+        super(type);
     }
 
    

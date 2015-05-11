@@ -7,10 +7,10 @@ import info.gridworld.grid.Location;
 import info.gridworld.actor.Actor;
 import java.awt.Color;
 /**
- * Write a description of class ChessPiece here.
+ * A Chess Piece that has a color, a type (0 = White, 1 = Black) and sets and gets types.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Jalen Smith) 
+ * @version (4/23/15)
  */
 public class ChessPiece extends Actor
 {
@@ -28,35 +28,23 @@ public class ChessPiece extends Actor
     }
     
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     *Sets this.type instance variable of a ChessPiece
      *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
-     * @return  description of the return value
-     */
+     * @param   type 0 = White, 1 =  Black
+     * */
     public void setType(int type)
     {
         this.type = type;
     }
     
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     *Gets this.type instance variable of a ChessPiece
      *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
-     * @return  description of the return value
+     * @return   type 0 = White, 1 =  Black
      */
     public int getType()
     {
-        // put your code here
+        
         return type;
     }
 
